@@ -3,8 +3,15 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins/Poppins-Light.ttf);
+}
 /* top navigation bar */
 .navigation__bar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   display: flex;
   width: 100%;
   height: 78px;
@@ -33,7 +40,7 @@
   justify-content: space-between;
   flex-wrap: nowrap;
   color: #13253a;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -60,7 +67,7 @@
 }
 .running__head {
   color: #2557ab;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -69,7 +76,7 @@
 }
 .title__text {
   color: #13253a;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 46px;
   font-style: normal;
   font-weight: 700;
@@ -79,7 +86,7 @@
 }
 .text__description {
   color: #13253a;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +103,7 @@
   background: #ff7f57;
   color: #fff;
   text-align: center;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -117,7 +124,7 @@
 }
 .running__head-section1 {
   color: #2557ab;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -126,7 +133,7 @@
 .title__text-section1 {
   color: #13253a;
   text-align: center;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 38px;
   font-style: normal;
   font-weight: 400;
@@ -158,7 +165,7 @@
   width: 370px;
   color: #3b4d6c;
   text-align: center;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -167,7 +174,7 @@
 .description__text-style {
   color: #13253a;
   text-align: center;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -195,7 +202,7 @@
 }
 .advertisement__highlight {
   color: #13253a;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 46px;
   font-style: normal;
   font-weight: 400;
@@ -206,7 +213,7 @@
 }
 .description__text-style2 {
   color: #2557ab;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -215,6 +222,12 @@
 /* section 2 end */
 
 /* section 3 */
+.item__position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .title__style {
   display: flex;
   flex-direction: column;
@@ -223,7 +236,7 @@
 }
 .title__style-section2 {
   color: #13253a;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
@@ -231,7 +244,7 @@
 }
 .running__head-section2 {
   color: #2557ab;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -245,7 +258,7 @@
 .text__properties-left {
   width: 40%;
   color: #2557ab;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -256,8 +269,8 @@
 }
 .text__properties-left--italic {
   color: #13253a;
-  font-family: Avenir Next;
-  font-size: 20px;
+  font-family: Poppins;
+  font-size: 18px;
   font-style: italic;
   font-weight: 400;
   line-height: 30px;
@@ -267,13 +280,14 @@
 .text__properties-right {
   width: 60%;
   color: #2557ab;
-  font-family: Avenir Next;
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 30px;
   width: 570px;
 }
 .padding__bottom {
@@ -282,9 +296,225 @@
 .logo__row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 970px;
-  height: 66px;
+  /* width: 970px;
+  height: 66px; */
   padding-top: 50px;
+  padding-bottom: 100px;
+}
+.logo__position {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+/* section 3 end */
+
+/* divider */
+.solid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 135px;
+  padding-right: 135px;
+  /* width: 1170px; */
+  height: 1px;
+  flex-shrink: 0;
+  background: #dce2e6;
+}
+/* divider end */
+
+/* section 4 */
+.relax__position {
+  display: flex;
+  flex-direction: row;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.h2__style--relax {
+  color: #13253a;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+.description__style-main--relax {
+  color: #13253a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  opacity: 0.9;
+  padding-bottom: 20px;
+}
+.checkbox__position {
+  display: flex;
+  align-items: center;
+}
+.description__style--relax {
+  color: #13253a;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+}
+.image__padding {
+  padding-left: 100px;
+}
+/* section 4 end */
+
+/* red rectangle */
+.rectangle__style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 434px;
+  flex-shrink: 0;
+  background: #ff7f57;
+}
+.h4__style-rectangle {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+.h2__style-rectangle {
+  color: #f4f6f7;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+}
+.text__description-rectangle {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-bottom: 20px;
+  width: 770px;
+}
+.button-rectangle__style {
+  width: 336px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: #2557ab;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+/* red rectamgle end */
+
+/* footer */
+.upper-rectangle__footer {
+  height: 817px;
+  width: 100%;
+  flex-shrink: 0;
+  background: #11364e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.h3__footer {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.5px;
+}
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+label {
+  padding-bottom: 10px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+input {
+  margin-bottom: 40px;
+  width: 371px;
+  /* height: 1px; */
+  flex-shrink: 0;
+  opacity: 0.25;
+  background: #fff;
+}
+input::placeholder {
+  background: #11364e;
+  color: #fff;
+  font-family: Avenir Next;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.2;
+}
+.button-footer__style {
+  width: 370px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  background: #ff7f57;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.lower-rectangle__footer {
+  height: 47px;
+  width: 100%;
+  flex-shrink: 0;
+  background: #13253a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copyright__footer {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7995;
 }
